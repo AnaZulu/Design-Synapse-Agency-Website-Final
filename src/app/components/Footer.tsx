@@ -22,7 +22,7 @@ export const Footer = memo(function Footer() {
                 className="flex items-center mb-6"
                 whileHover={{ scale: 1.05 }}
               >
-                <img src={logoImage} alt="Synapse Logo" className="w-28 h-28" />
+                <img src={logoImage} alt="Synapse Logo" className="w-18 h-18" />
                 <div className="flex flex-col">
                   <span className="text-white font-bold text-3xl tracking-wide">SYNAPSE</span>
                   <span className="text-[#36BFE3] text-base tracking-wider opacity-80">{t('nav.tagline')}</span>
