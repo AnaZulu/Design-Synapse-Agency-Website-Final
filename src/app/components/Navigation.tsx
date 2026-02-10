@@ -34,6 +34,13 @@ export const Navigation = memo(function Navigation() {
     return location.pathname === path;
   };
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <motion.nav
@@ -47,7 +54,9 @@ export const Navigation = memo(function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
           <div className="flex items-center justify-between">
-            <Link to="/" aria-label="Synapse home page">
+            <Link to="/" aria-label="Synapse home page" onClick={handleLogoClick}
+
+            >
               <motion.div
                 className="flex items-center gap-2 sm:gap-3 relative"
                 whileHover={{ scale: 1.02 }}
