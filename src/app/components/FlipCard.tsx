@@ -7,7 +7,8 @@ interface FlipCardProps {
   name: string;
   service: string;
   description: string;
-  image: string;
+  image?: string;
+  video?: string;
   instagram?: string;
   index: number;
   isMobile: boolean;
@@ -18,6 +19,7 @@ export function FlipCard({
   service,
   description,
   image,
+  video,
   instagram,
   index,
   isMobile
@@ -46,15 +48,26 @@ export function FlipCard({
           className="absolute inset-0 rounded-2xl overflow-hidden bg-gradient-to-br from-[#2a2d33] to-[#27292E] border border-[#36BFE3]/20 shadow-xl"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          {/* Image */}
+          {/* Image or Video */}
           <div className="relative h-full overflow-hidden">
-            <motion.img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            />
+            {video ? (
+              <video
+                src={video}
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <motion.img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-[#27292E] via-[#27292E]/80 to-transparent" />
             
             {/* Overlay Content */}

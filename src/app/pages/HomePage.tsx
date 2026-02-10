@@ -7,6 +7,10 @@ import { memo } from 'react';
 import { FlipCard } from '../components/FlipCard';
 import heroVideo from '../../assets/HeroVideo.mp4';
 import omarImage from '../../assets/Omar.jpeg';
+import RamziImage from '../../assets/Ramzi.png';
+import cpPowderVideo from '../../assets/CPPowderCoating.mp4';
+import barbershopLogo from '../../assets/jannoun_3.png';
+
 
 export const HomePage = memo(function HomePage() {
   const { t } = useLanguage();
@@ -246,7 +250,7 @@ export const HomePage = memo(function HomePage() {
                 name: 'Barbershop Principale',
                 service: t('projectsPage.sponsor2Service'),
                 description: t('projectsPage.sponsor2Desc'),
-                image: 'https://images.unsplash.com/photo-1761931403671-d020a14928d9?w=800&q=80',
+                image: barbershopLogo,
                 instagram: 'jannoun_barber',
               },
               {
@@ -259,27 +263,28 @@ export const HomePage = memo(function HomePage() {
                 name: 'CP Powder Coating',
                 service: t('projectsPage.sponsor4Service'),
                 description: t('projectsPage.sponsor4Desc'),
-                image: 'https://images.unsplash.com/photo-1533491421865-829f6fd09bc7?w=800&q=80',
+                video: cpPowderVideo,
                 instagram: 'cppowdercoating',
               },
               {
                 name: 'Ramzi Kerouicha',
                 service: t('projectsPage.sponsor5Service'),
                 description: t('projectsPage.sponsor5Desc'),
-                image: 'https://images.unsplash.com/photo-1666698809123-44e998e93f23?w=800&q=80',
+                image: RamziImage,
                 instagram: 'ramzi_kerouicha_',
               },
             ].map((sponsor, index) => (
-              <FlipCard
-                key={sponsor.name}
-                name={sponsor.name}
-                service={sponsor.service}
-                description={sponsor.description}
-                image={sponsor.image}
-                instagram={sponsor.instagram}
-                index={index}
-                isMobile={isMobile}
-              />
+            <FlipCard
+              key={sponsor.name}
+              name={sponsor.name}
+              service={sponsor.service}
+              description={sponsor.description}
+              image={sponsor.image}
+              video={sponsor.video ?? undefined}
+              instagram={sponsor.instagram}
+              index={index}
+              isMobile={isMobile}
+            />
             ))}
           </div>
         </div>
