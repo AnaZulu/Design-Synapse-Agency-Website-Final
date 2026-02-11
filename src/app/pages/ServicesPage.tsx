@@ -121,44 +121,24 @@ export function ServicesPage() {
         />
 
         <div className="max-w-5xl mx-auto relative z-10">
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#3073B3]/10 to-[#36BFE3]/10 border border-[#36BFE3]/20 mb-8 backdrop-blur-sm"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#3073B3]/10 to-[#36BFE3]/10 border border-[#36BFE3]/20 mb-8 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-[#36BFE3] animate-pulse" />
               <span className="text-[#36BFE3] text-sm font-semibold tracking-wide">{t('servicesPage.badge')}</span>
-            </motion.div>
+            </div>
 
-            <motion.h1 
-              className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-            >
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               {t('servicesPage.title1')}
               <br />
               <span className="bg-gradient-to-r from-[#3073B3] via-[#36BFE3] to-[#7BC3D1] bg-clip-text text-transparent">
                 {t('servicesPage.title2')}
               </span>
-            </motion.h1>
+            </h1>
 
-            <motion.p 
-              className="text-xl text-white/60 max-w-2xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
+            <p className="text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
               {t('servicesPage.subtitle')}
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -170,10 +150,6 @@ export function ServicesPage() {
               <motion.div
                 key={service.title}
                 className="bg-gradient-to-br from-[#2a2d33]/80 to-[#25272c]/80 backdrop-blur-sm rounded-3xl p-8 border border-[#36BFE3]/10 hover:border-[#36BFE3]/40 transition-all duration-500 relative overflow-hidden group"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ delay: index * 0.08, duration: 0.5 }}
                 whileHover={{ 
                   y: -8,
                   transition: { duration: 0.3 }
@@ -226,17 +202,13 @@ export function ServicesPage() {
                   {/* Features */}
                   <div className="space-y-3">
                     {service.features.map((feature, idx) => (
-                      <motion.div 
+                      <div 
                         key={idx} 
                         className="flex items-start gap-3"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: (index * 0.08) + (idx * 0.05) }}
                       >
                         <CheckCircle className="w-4 h-4 text-[#36BFE3] flex-shrink-0 mt-0.5" />
                         <span className="text-white/70 text-sm leading-relaxed">{feature}</span>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -252,20 +224,14 @@ export function ServicesPage() {
         <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#36BFE3]/10 rounded-full blur-3xl" />
         
         <div className="max-w-7xl mx-auto relative z-10">
-          <motion.div
-            className="text-center mb-20"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {t('servicesPage.processTitle')}
             </h2>
             <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
               {t('servicesPage.processSubtitle')}
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {[
@@ -290,13 +256,9 @@ export function ServicesPage() {
                 desc: t('servicesPage.process4Desc'),
               },
             ].map((step, index) => (
-              <motion.div
+              <div
                 key={step.number}
                 className="relative"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
               >
                 {/* Connecting line (hidden on mobile and last item) */}
                 {index < 3 && (
@@ -330,17 +292,11 @@ export function ServicesPage() {
                     <p className="text-white/60 text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </motion.div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-          >
+          <div className="text-center">
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
               {t('servicesPage.processCTA')}
             </p>
@@ -356,13 +312,13 @@ export function ServicesPage() {
                 </span>
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-[#36BFE3] to-[#3073B3]"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  // initial={{ opacity: 0 }}
+                  // whileHover={{ opacity: 1 }}
+                  // transition={{ duration: 0.3 }}
                 />
               </motion.button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -382,12 +338,7 @@ export function ServicesPage() {
         />
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               {t('servicesPage.ctaTitle')}
             </h2>
@@ -415,7 +366,7 @@ export function ServicesPage() {
                 </motion.button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

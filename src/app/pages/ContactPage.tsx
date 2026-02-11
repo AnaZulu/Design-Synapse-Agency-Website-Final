@@ -135,12 +135,12 @@ export function ContactPage() {
       }
     } else if (hash === '#contact-form') {
       const contactSection = document.getElementById('contact-form');
-      if (contactSection) {
-        // Small delay to ensure page is fully loaded
-        setTimeout(() => {
-          contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
-      }
+      // if (contactSection) {
+      //   // Small delay to ensure page is fully loaded
+      //   setTimeout(() => {
+      //     contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      //   }, 100);
+      // }
     }
   }, []);
 
@@ -188,14 +188,14 @@ export function ContactPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
           >
             <motion.div
               className="inline-block px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // animate={{ opacity: 1, scale: 1 }}
+              // transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-sm font-medium">{t('contactPage.badge')}</span>
             </motion.div>
@@ -221,9 +221,9 @@ export function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
+              // initial={{ opacity: 0, x: -30 }}
+              // animate={{ opacity: 1, x: 0 }}
+              // transition={{ delay: 0.4 }}
             >
               <div className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-3xl p-8 md:p-10 border border-[#36BFE3]/10 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-[#3073B3]/10 rounded-full blur-2xl" />
@@ -235,8 +235,8 @@ export function ContactPage() {
                   {submitted ? (
                     <motion.div
                       className="py-20 text-center"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      // initial={{ opacity: 0, scale: 0.8 }}
+                      // animate={{ opacity: 1, scale: 1 }}
                     >
                       <div className="w-20 h-20 rounded-full bg-gradient-to-r from-[#3073B3] to-[#36BFE3] mx-auto mb-6 flex items-center justify-center shadow-lg shadow-[#36BFE3]/50">
                         <Send className="w-10 h-10 text-white" />
@@ -392,9 +392,9 @@ export function ContactPage() {
             {/* Contact Information */}
             <motion.div
               className="space-y-8"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
+              // initial={{ opacity: 0, x: 30 }}
+              // animate={{ opacity: 1, x: 0 }}
+              // transition={{ delay: 0.4 }}
             >
               {/* Contact Cards */}
               <div className="space-y-6">
@@ -403,8 +403,8 @@ export function ContactPage() {
                     key={item.title}
                     className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-6 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 relative overflow-hidden group cursor-pointer transition-all"
                     whileHover={{ y: -5 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    // initial={{ opacity: 0, y: 20 }}
+                    // animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 + index * 0.1 }}
                   >
                     <div className="absolute top-0 right-0 w-32 h-32 bg-[#3073B3]/5 rounded-full blur-2xl group-hover:bg-[#36BFE3]/10 transition-all" />
@@ -427,8 +427,8 @@ export function ContactPage() {
               {/* Additional Info */}
               <motion.div
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-8 border border-[#36BFE3]/10 relative overflow-hidden"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
               >
                 <div className="absolute top-0 right-0 w-40 h-40 bg-[#36BFE3]/10 rounded-full blur-2xl" />
@@ -497,14 +497,14 @@ export function ContactPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <motion.div
               className="inline-block px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
@@ -527,8 +527,8 @@ export function ContactPage() {
               <motion.div
                 key={index}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 overflow-hidden transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
               >
@@ -540,8 +540,8 @@ export function ContactPage() {
                     {faq.question}
                   </h3>
                   <motion.div
-                    animate={{ rotate: openFaqIndex === index ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
+                    // animate={{ rotate: openFaqIndex === index ? 180 : 0 }}
+                    // transition={{ duration: 0.3 }}
                   >
                     <ChevronDown className="w-5 h-5 text-[#36BFE3] flex-shrink-0" />
                   </motion.div>

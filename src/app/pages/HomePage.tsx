@@ -11,7 +11,6 @@ import RamziImage from '../../assets/Ramzi.png';
 import cpPowderVideo from '../../assets/CPPowderCoating.mp4';
 import barbershopLogo from '../../assets/jannoun_3.png';
 
-
 export const HomePage = memo(function HomePage() {
   const { t } = useLanguage();
   const isMobile = useMobileDevice();
@@ -23,7 +22,8 @@ export const HomePage = memo(function HomePage() {
         {/* Background with video */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
-            className="absolute inset-0 w-full h-full object-cover opacity-25"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_40%] scale-100 opacity-85"
+
             autoPlay
             muted
             loop
@@ -58,14 +58,14 @@ export const HomePage = memo(function HomePage() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             <motion.div
               className="inline-block px-4 sm:px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6 sm:mb-8"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-xs sm:text-sm font-medium">{t('hero.badge')}</span>
@@ -118,10 +118,10 @@ export const HomePage = memo(function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-10 sm:mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true, margin: "-100px" }}
+            // transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-4">
               {t('home.servicesTitle')}
@@ -167,10 +167,10 @@ export const HomePage = memo(function HomePage() {
               <motion.div
                 key={service.title}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-6 sm:p-7 md:p-8 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 relative overflow-hidden group cursor-pointer transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: isMobile ? 0 : index * 0.05, duration: isMobile ? 0.3 : 0.4 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // viewport={{ once: true, margin: "-50px" }}
+                // transition={{ delay: isMobile ? 0 : index * 0.05, duration: isMobile ? 0.3 : 0.4 }}
                 whileHover={{ y: -5 }}
               >
                 <div className="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#3073B3]/5 rounded-full blur-2xl group-hover:bg-[#36BFE3]/10 transition-all" />
@@ -189,9 +189,9 @@ export const HomePage = memo(function HomePage() {
 
           <motion.div
             className="text-center mt-8 sm:mt-12"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true }}
           >
             <Link to="/services">
               <motion.button

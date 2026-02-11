@@ -93,7 +93,7 @@ export function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
+              whileHover="hover"
               className="group relative"
             >
               {/* Glowing border on hover */}
@@ -112,6 +112,7 @@ export function Portfolio() {
                     <motion.div
                       initial={{ scale: 0 }}
                       whileHover={{ scale: 1 }}
+                      whileTap={{ scale: 1 }}
                       className="w-16 h-16 rounded-full bg-gradient-to-br from-[#3073B3] to-[#36BFE3] flex items-center justify-center"
                       style={{
                         boxShadow: '0 0 30px rgba(54, 191, 227, 0.8)',

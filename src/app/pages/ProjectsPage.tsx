@@ -114,14 +114,14 @@ export function ProjectsPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
           >
             <motion.div
               className="inline-block px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // animate={{ opacity: 1, scale: 1 }}
+              // transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-sm font-medium">{t('projectsPage.badge')}</span>
             </motion.div>
@@ -142,9 +142,9 @@ export function ProjectsPage() {
           {/* Filter Buttons */}
           <motion.div
             className="flex flex-wrap justify-center gap-4 mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ delay: 0.4 }}
           >
             {categories.map((category) => (
               <motion.button

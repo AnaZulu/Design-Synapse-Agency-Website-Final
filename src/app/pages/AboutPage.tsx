@@ -16,13 +16,13 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
           >
             <motion.div
               className="inline-block px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-sm font-medium">{t('aboutPage.badge')}</span>
@@ -43,8 +43,8 @@ export function AboutPage() {
             {/* Tagline */}
             <motion.div
               className="max-w-2xl mx-auto mt-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
               <p className="text-2xl font-bold text-[#36BFE3] mb-2">
@@ -58,8 +58,8 @@ export function AboutPage() {
 
           <motion.div
             className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
             {[
@@ -71,8 +71,8 @@ export function AboutPage() {
                 key={stat.label}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-8 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 text-center transition-all"
                 whileHover={{ y: -5 }}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                // initial={{ opacity: 0, scale: 0.9 }}
+                // animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 + index * 0.1 }}
               >
                 <div className="text-5xl font-bold bg-gradient-to-r from-[#3073B3] to-[#36BFE3] bg-clip-text text-transparent mb-3">
@@ -90,9 +90,9 @@ export function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <motion.div
             className="border-2 border-[#36BFE3]/40 rounded-3xl p-10 md:p-12 bg-gradient-to-br from-[#2a2d33]/50 to-[#27292E]/50 backdrop-blur-sm"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">
               {t('aboutPage.storyVisionTitle')}
@@ -113,9 +113,9 @@ export function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             <motion.div
               className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-3xl p-10 border border-[#36BFE3]/10 relative overflow-hidden"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, x: -30 }}
+              // whileInView={{ opacity: 1, x: 0 }}
+              // viewport={{ once: true }}
             >
               <div className="absolute top-0 right-0 w-40 h-40 bg-[#3073B3]/10 rounded-full blur-2xl" />
               
@@ -159,9 +159,9 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t('aboutPage.experienceTitle')}
@@ -171,9 +171,9 @@ export function AboutPage() {
           {/* Professional Note */}
           <motion.div
             className="max-w-4xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <div className="bg-gradient-to-r from-[#3073B3]/10 to-[#36BFE3]/10 border border-[#36BFE3]/30 rounded-2xl p-8 backdrop-blur-sm">
               <div className="flex items-start gap-4">
@@ -213,11 +213,11 @@ export function AboutPage() {
               <motion.div
                 key={item.title}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-8 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 relative overflow-hidden group transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: index * 0.1 }}
+                // whileHover={{ y: -5 }}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#3073B3]/5 rounded-full blur-2xl group-hover:bg-[#36BFE3]/10 transition-all" />
                 
@@ -240,9 +240,9 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t('aboutPage.whatWeDoTitle')}
@@ -265,11 +265,11 @@ export function AboutPage() {
               <motion.div
                 key={item.title}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-10 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 relative overflow-hidden group transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: index * 0.1 }}
+                // whileHover={{ y: -5 }}
               >
                 <div className="absolute top-0 right-0 w-40 h-40 bg-[#3073B3]/5 rounded-full blur-2xl group-hover:bg-[#36BFE3]/10 transition-all" />
                 
@@ -292,9 +292,9 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {t('aboutPage.whyChooseTitle')}
@@ -340,11 +340,11 @@ export function AboutPage() {
               <motion.div
                 key={advantage.title}
                 className="bg-gradient-to-br from-[#2a2d33] to-[#27292E] rounded-2xl p-8 border border-[#36BFE3]/10 hover:border-[#36BFE3]/30 relative overflow-hidden group transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: index * 0.1 }}
+                // whileHover={{ y: -5 }}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#3073B3]/5 rounded-full blur-2xl group-hover:bg-[#36BFE3]/10 transition-all" />
                 
@@ -366,9 +366,9 @@ export function AboutPage() {
       <section className="py-24 px-6 bg-gradient-to-b from-[#1f2125] to-[#27292E]">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               {t('aboutPage.ctaTitle')}

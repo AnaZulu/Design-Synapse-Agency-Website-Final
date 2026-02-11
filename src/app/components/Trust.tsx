@@ -47,10 +47,10 @@ export function Trust() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Stats section */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true }}
+          // transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
@@ -67,10 +67,10 @@ export function Trust() {
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                // initial={{ opacity: 0, scale: 0.9 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="relative group"
               >
@@ -91,10 +91,10 @@ export function Trust() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
+              // initial={{ opacity: 0, y: 30 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ y: -10 }}
               className="relative group"
             >
@@ -131,10 +131,10 @@ export function Trust() {
 
         {/* Client logos */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true }}
+          // transition={{ duration: 0.6 }}
           className="text-center"
         >
           <p className="text-white/40 text-sm uppercase tracking-wider mb-8">
@@ -144,10 +144,10 @@ export function Trust() {
             {clients.map((client, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                // initial={{ opacity: 0, scale: 0.8 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // viewport={{ once: true }}
+                // transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.1 }}
                 className="text-white/30 font-bold text-2xl tracking-wider hover:text-[#36BFE3] transition-colors cursor-pointer"
               >
