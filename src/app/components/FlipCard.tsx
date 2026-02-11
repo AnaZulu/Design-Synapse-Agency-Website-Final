@@ -30,9 +30,9 @@ export function FlipCard({
   return (
     <motion.div
       className="relative h-[450px] cursor-pointer"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      // initial={{ opacity: 0, y: 30 }}
+      // whileInView={{ opacity: 1, y: 0 }}
+      // viewport={{ once: true }}
       transition={{ delay: isMobile ? 0 : index * 0.1, duration: 0.5 }}
       onClick={() => setIsFlipped(!isFlipped)}
       style={{ perspective: '1000px' }}
@@ -75,8 +75,8 @@ export function FlipCard({
               {/* Badge */}
               <motion.div
                 className="mb-4"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                // initial={{ opacity: 0, y: 10 }}
+                // animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
                 <span className="inline-block px-4 py-1.5 rounded-full bg-[#3073B3]/80 backdrop-blur-sm border border-[#36BFE3]/30 text-[#36BFE3] text-xs font-semibold tracking-wide">

@@ -22,7 +22,7 @@ export const HomePage = memo(function HomePage() {
         {/* Background with video */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
-            className="absolute inset-0 w-full h-full object-cover object-[50%_40%] scale-100 opacity-85"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_40%] scale-100 opacity-95"
 
             autoPlay
             muted
@@ -60,13 +60,13 @@ export const HomePage = memo(function HomePage() {
           <motion.div
             // initial={{ opacity: 0, y: 30 }}
             // animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            // transition={{ duration: 0.6 }}
           >
             <motion.div
               className="inline-block px-4 sm:px-6 py-2 rounded-full bg-[#3073B3]/20 border border-[#36BFE3]/30 mb-6 sm:mb-8"
               // initial={{ opacity: 0, scale: 0.8 }}
               // animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              // transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-xs sm:text-sm font-medium">{t('hero.badge')}</span>
             </motion.div>
@@ -121,7 +121,7 @@ export const HomePage = memo(function HomePage() {
             // initial={{ opacity: 0, y: 20 }}
             // whileInView={{ opacity: 1, y: 0 }}
             // viewport={{ once: true, margin: "-100px" }}
-            // transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-4">
               {t('home.servicesTitle')}
@@ -214,16 +214,16 @@ export const HomePage = memo(function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-20"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <motion.div
               className="inline-block px-5 py-2 rounded-full bg-[#3073B3]/10 border border-[#36BFE3]/20 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // whileInView={{ opacity: 1, scale: 1 }}
+              // viewport={{ once: true }}
+              // transition={{ delay: 0.2 }}
             >
               <span className="text-[#36BFE3] text-sm font-medium tracking-wide">{t('projectsPage.partnershipsBadge')}</span>
             </motion.div>
@@ -297,9 +297,9 @@ export const HomePage = memo(function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, x: -30 }}
+              // whileInView={{ opacity: 1, x: 0 }}
+              // viewport={{ once: true }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 {t('home.whyTitle')}
@@ -319,10 +319,10 @@ export const HomePage = memo(function HomePage() {
                   <motion.div
                     key={point}
                     className="flex items-start gap-4"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: isMobile ? 0 : index * 0.05, duration: isMobile ? 0.2 : 0.3 }}
+                    // initial={{ opacity: 0, x: -20 }}
+                    // whileInView={{ opacity: 1, x: 0 }}
+                    // viewport={{ once: true }}
+                    // transition={{ delay: isMobile ? 0 : index * 0.05, duration: isMobile ? 0.2 : 0.3 }}
                   >
                     <div className="mt-1">
                       <CheckCircle className="w-6 h-6 text-[#36BFE3]" />
@@ -354,9 +354,9 @@ export const HomePage = memo(function HomePage() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               {t('home.ctaTitle')}
